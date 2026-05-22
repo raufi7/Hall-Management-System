@@ -74,8 +74,8 @@ void handleResidential() {
             printf("-> This is your late entry number: %d\n", lateCount);
 
             if (lateCount > 3) {
-                printf("⚠️ PENALTY WARNING: You have crossed the 3-time late entry limit!\n");
-                printf("📢 Action: An automated Late Entry Notification has been sent to your Parent/Guardian.\n");
+                printf("PENALTY WARNING: You have crossed the 3-time late entry limit!\n");
+                printf("Action: An automated Late Entry Notification has been sent to your Parent/Guardian.\n");
                 
                 saveToFile("Residential", hallID, entryTime, "Late Entry Approved (Guardian Warned)");
             } else {
